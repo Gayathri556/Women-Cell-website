@@ -1,0 +1,718 @@
+*,
+*:before,
+*:after{
+    box-sizing:border-box;
+}
+.logo{
+  text-align: center;
+  justify-content: center;
+}
+.header .header-main {
+    padding: 0px 0;
+}
+.header-main container{
+  position:absolute;
+  bottom:0;
+
+}
+.logo2{
+    float:left;
+    letter-spacing: .5px;
+    color:white;
+}
+body{
+  margin:0;
+}
+a{
+    color:white; 
+}
+.primary-nav a:hover{
+    background-color:white;
+    color:black;
+    font-size:21px;
+    font-weight: 400;
+    border-radius: 5px;
+}
+.primary-nav #top_logo:hover{
+  background-color: #8c1515;
+  color:white;
+}
+select{
+  border-radius: none;
+  color:white;
+  background-color: #8c1515;
+  background-color: none;
+}
+
+
+/*.right-menu{
+  position: relative;
+  display: inline-block;
+ 
+}
+.dropdown-menu{
+   display: none;
+   position: absolute;
+   width: 120px;
+   background-color: white;
+   z-index:1;
+   padding-bottom: 200px;
+}
+.dropdown-menu a {
+  padding:40px 40px;
+  display:block;
+  text-decoration: none;
+
+}
+
+.dropdown-menu a:hover{
+  background: whitesmoke;
+  color:black;
+}
+.dropdown-menu:hover a{
+  display: inline-block;
+  color:#8c1515;
+}
+.right-menu:hover .dropdown-menu{
+  display: block;
+}
+.right-menu:hover .login{
+  background: transparent;
+  
+}*/
+/*.primary-nav{
+    font-size:20px;
+    font-weight: 400;
+    padding-top:30px;
+    padding-bottom: 70px;
+    padding-right: 5px;
+    padding-left: 5px;
+    text-align: center;
+    word-spacing: 10px;
+}*/
+/*.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  color: black;
+}
+
+.right-menu:hover .dropdown-menu {
+  text-align: right;
+  display: block;
+  right: 0;
+}
+
+.dropdown-menu a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f1f1f1;
+  color: black;
+}*/
+
+ 
+
+         /* Add CSS styles for the navigation bar */
+        header{
+          width:100%;
+        }
+          .primary-nav {
+           overflow: hidden;
+           background-color:#8c1515;
+           position: fixed;
+           right: 0;
+           left: 0;
+           z-index: 1030;
+           
+         }
+         .logo2 {
+            float: left;
+            margin-right: 20px;
+          }
+          .logo2 img {
+            width: 60px; 
+            height: 60px; 
+            border-radius: 50%;
+            overflow: hidden;
+            background-color: #8c1515;
+          }
+         .primary-nav a {
+            font-size:21px;
+           float: left;
+           display: block;
+           color:white;
+           text-align: center;
+           padding: 0px 5px;
+           margin-right: 4px;
+           margin-top:20px;
+           text-decoration: none;
+         }
+         .primary-nav .icon{
+          display: none;
+         }
+
+        
+    
+     
+      /* Style for the carousel container */
+
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  flex: 0 0 100%; 
+  overflow: hidden;
+}
+
+
+.slide img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+
+.carousel-btn {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#prevBtn,
+#nextBtn {
+  background-color: #8c1515;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+.carousel-container {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+  overflow: hidden;
+}
+
+/*.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  flex: 0 0 100%;
+  overflow: hidden;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.prev {
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 3px 0 0 3px;
+}
+
+.next {
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}*/
+
+
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .slide {
+     flex: 0 0 100%;
+  }
+}
+
+       select{
+        width:100px;
+        height:20px;
+       }
+         
+       
+         @media screen and (max-width: 600px) {
+           /* Adjust the layout for smaller screens */
+           .primary-nav a:not(:first-child) {
+             display: none;
+           }
+       
+           .primary-nav a.icon {
+             float: right;
+             display: block;
+           }
+       
+           .primary-nav.responsive {
+             position: relative;
+           }
+       
+           .primary-nav.responsive .icon {
+             position: absolute;
+             top: 0;
+             right: 0;
+           }
+       
+           .primary-nav.responsive a {
+             float: none;
+             display: block;
+             text-align: left;
+           }
+         }
+
+.rgukt-logo{
+  margin-top: 70px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Source Sans Pro',Arial,sans-serif;
+    font-weight: 300;
+}
+.header h1.logo {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.h2, h2 {
+    font-size: 30px;
+}
+
+.h1, .h2, .h3, h1, h2, h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Source Sans Pro',Arial,sans-serif;
+    font-weight: 300;
+}
+
+.h4, h4 {
+    font-size: 18px;
+}
+.h4, .h5, .h6, h4, h5, h6 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+img {
+    vertical-align: middle;
+}
+
+img {
+    border: 0;
+}
+
+a {
+    color: white;
+ 
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+}
+@media (max-width: 767px){
+.logo {
+    text-align: center;
+}}
+
+a:-webkit-any-link {
+    color: white;
+    cursor: pointer;
+    
+}
+
+.row1{
+  position: relative;
+}
+.heading-text{
+  top:0%;
+  left:30%;
+  position: absolute;
+  padding: 25px;
+  background-color: rgba(255,255,255,0.5);
+  text-align: center;
+  justify-content: center;
+  border-radius: 2px;
+}
+/* Banner Styles */
+#banner {
+  background-color: #f2f2f2;
+  padding:50px;
+  text-align: center;
+  color: #333;
+}
+
+/* About Section Styles */
+#about {
+  background-color: #e9e8e8;
+  padding: 50px;
+  color: #333;
+  padding-top: 70px;
+}
+#about h2{
+  text-align: center;
+}
+.about-content {
+  display: flex;
+  align-items: center;
+}
+
+.about-image {
+  flex: 0 0 auto;
+  margin-right: 20px;
+}
+/*#img-about {
+  width: 80px;
+  height: 70px;
+}*/
+
+.about-text {
+  flex: 1;
+}
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+  }
+
+  .about-image {
+    margin-bottom: 20px;
+  }
+}
+
+/* Events Section Styles */
+#events {
+  background-color: #f2f2f2;
+  padding: 50px;
+  color: #333;
+  padding-top: 70px;
+
+}
+
+.event {
+  margin-bottom: 20px;
+}
+
+.event h3 {
+  margin-top: 0;
+}
+
+#gallery {
+  padding: 100px;
+  background-color: #f2f2f2;
+ 
+}
+
+#gallery .container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.gallery-container{
+  margin-top: 50px;
+}
+#gallery .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#gallery .col-md-4 {
+  width: 33.33%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+#gallery img {
+  width: 100%;
+  height: auto;
+}
+.profile-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.profile-card {
+  width: 200px;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.profile-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.profile-card h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.profile-card p {
+  margin: 0;
+  font-size: 14px;
+  color: #777;
+}
+@media (max-width: 768px) {
+  #gallery .col-md-4 {
+    width: 70%;
+  }
+}
+
+@media (max-width: 576px) {
+  #gallery .col-md-4 {
+    width: 100%;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+.trainings-container {
+  padding: 50px;
+ 
+  padding-top:60px;
+}
+
+
+/* Contact Section Styles */
+#contact {
+  padding: 50px;
+  background-color: #f2f2f2;
+  padding-top: 110px;
+}
+
+#contact .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#contact h2 {
+  margin-bottom: 20px;
+}
+
+#contact .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#contact .col-md-6 {
+  width: 50%;
+  box-sizing: border-box;
+}
+
+#contact form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#contact form input,
+#contact form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#contact form button {
+  padding: 10px 20px;
+  background-color: #8c1515;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#contact form button:hover {
+  background-color: #8c1515;
+}
+@media (max-width: 767px) {
+  #contact .row {
+    flex-direction: column;
+  }
+
+  #contact .col-md-6 {
+    width: 100%;
+  }
+}
+
+
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+footer {
+    background-color: #302c2c;
+    padding: 10px; 
+    text-align: center; 
+  }
+  
+  footer p ,footer a{
+    color: #f6f3f3; 
+    font-size: 14px; 
+    font-style: italic; 
+    margin: 0; 
+  }
+  
+  footer p.highlight {
+    font-weight: bold; 
+    color: #ff0000; 
+  }
+  .slideshow-container {
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.move-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #8c1515;
+  color: #fff;
+  padding: 10px;
+  border-radius: 20%;
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  cursor: pointer;
+  border: none;
+}
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}

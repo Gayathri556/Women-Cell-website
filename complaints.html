@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women's Cell Complaints Portal</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Add your custom CSS file here -->
+</head>
+<style>
+    /* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #8c1515;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+nav {
+    background-color: #8c1515;
+    padding: 10px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* Complaint Form */
+#complaint-form form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    background-color:#8c1515;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color:#8c1515;
+}
+
+/* Previous Complaints */
+#previous-complaints ul {
+    list-style-type: none;
+    padding: 0;
+}
+body{
+            background-image: url('complaints.jpg');
+            background-size: cover; 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+        }
+#previous-complaints li {
+    margin-bottom: 5px;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+#email{
+    margin:20px 0px;
+    width:99%;
+    height:25px;
+}
+footer {
+    background-color:rgb(39, 37, 37);
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+}
+/* ... (Previous CSS code) ... */
+
+/* Additional CSS to show the department dropdown when "Departments" is selected */
+#complaintType {
+    margin-bottom: 10px;
+}
+
+/* Show the department dropdown when "Departments" is selected */
+#complaintType option[value="Departments"]:checked ~ #department {
+    display: inline-block;
+}
+
+/* ... (Remaining CSS code) ... */
+
+</style>
+<body>
+    <header>
+        <h1>Women's Cell Complaints Portal</h1>
+    </header>
+
+    <nav>
+        <!-- Add navigation links here -->
+        <!-- Example:
+        <a href="#">Home</a>
+        <a href="#">Complaints</a>
+        <a href="#">Contact</a>
+        -->
+    </nav>
+
+    <main class="container">
+        <section id="welcome">
+            <h2>Welcome!</h2>
+            <p>Here you can lodge your complaints and concerns with the Women's Cell.</p>
+        </section>
+<!-- ... (Previous code) ... -->
+
+<!-- Complaint Form -->
+<section id="complaint-form">
+    <h3>Lodge a Complaint</h3>
+    <form id="tosend" action="/" method="POST">
+        <label for="name">Enter Your Mail:</label>
+           <input type="email" id="email" name="email" required><br>
+        <label for="complaintType">Complaint To:</label>
+        <select name="complaintType" id="complaintType" required>
+            <option value="">Select an Option</option>
+            <option value="Administration">Administration</option>
+            <option value="Wardens">Wardens</option>
+            <option value="Deans">Deans</option>
+            <option value="Departments">Departments</option>
+        </select>
+
+        <!-- Dropdown for B.Tech Departments -->
+        <select name="department" id="department" style="display: none;">
+            <option value="">Select an option</option>
+            <option value="CSE">Computer Science and Engineering (CSE)</option>
+            <option value="EEE">Electrical and Electronics Engineering (EEE)</option>
+            <option value="ECE">Electronics and Communication Engineering (ECE)</option>
+            <option value="Mech">Mechanical Engineering (ME)</option>
+            <option value="Civil">Civil Engineering (CE)</option>
+            <option value="MME">Metallurgical and Materials Engineering (MME) </option>
+            <option value="Chem">Chemical Engineering</option>
+            <!-- Add more department options as needed -->
+        </select>
+        <br>
+        <select name="deans" id="deans" style="display: none;">
+            <option value="">Select an option</option>
+            <option value="rad">Dean, Research and Development (R&D) </option>
+            <option value="subjects1">Associate Dean of Engineering 
+(EE,ME,CHE & MME)</option>
+            <!-- Add more department options as needed -->
+            <option value="subjects2">Associate Dean of Engineering
+                (ECE,CSE,CE)</option>
+               <option value="science">Associate Dean of Sciences</option>
+               <option value="humanities"> Associate Dean of Humanities</option>
+        </select>
+        <br>
+        <select name="wardens" id="wardens" style="display: none;">
+            <option value="">Select an option </option>
+            <option value="girls">Girls Chief Warden </option>
+            <option value="Boys">Boys Chief Warden </option>
+            <!-- Add more department options as needed -->
+        </select>
+        <br>
+
+       
+        <select name="administration" id="administration" style="display: none;">
+            <option>Select an option</option>
+            <option value="vc">Vice Chancellor I/c for RGUKT Basar</option>
+            <option value="director">Director
+            </option>
+            <option>Finance Officer</option>
+        </select>
+        <br>
+        
+        <br>
+        <label for="complaintDetails">Complaint Details:</label>
+        <textarea name="complaintDetails" id="complaintDetails" rows="4" cols="50" required></textarea>
+        <br>
+
+        <input type="submit" value="Submit">
+    </form>
+    </section>
+    </main>
+
+    <footer>
+        <p>Contact the Women's Cell for assistance: womencell.rguktbasar@gmail.com</p>
+    </footer>
+</body>
+<script>
+    // JavaScript to show/hide the department dropdown based on the selected option
+    var el=document.getElementById('tosend');
+    const complaintTypeSelect = document.getElementById('complaintType');
+    const departmentSelect = document.getElementById('department');
+    const wardenSelect = document.getElementById('wardens');
+    const deansSelect = document.getElementById('deans');
+    const admininstrationSelect = document.getElementById('administration');
+
+
+    complaintTypeSelect.addEventListener('change', function() {
+    if (complaintTypeSelect.value === 'Departments') {
+        departmentSelect.style.display = 'inline-block';
+        wardenSelect.style.display = 'none';
+        admininstrationSelect.style.display = 'none';
+        deansSelect.style.display = 'none';
+        
+    }
+        else if(complaintTypeSelect.value ==='Wardens'){
+            wardenSelect.style.display='inline-block';
+            departmentSelect.style.display = 'none';
+            admininstrationSelect.style.display='none';
+            deansSelect.style.display='none';
+        }
+        else if(complaintTypeSelect.value ==='Administration'){
+            admininstrationSelect.style.display='inline-block';
+            departmentSelect.style.display = 'none';
+            wardenSelect.style.display='none';
+          
+            deansSelect.style.display='none';
+        }
+        else if(complaintTypeSelect.value==='Deans'){
+            departmentSelect.style.display = 'none';
+            wardenSelect.style.display='none';
+            admininstrationSelect.style.display='none';
+            deansSelect.style.display='inline-block';
+        }
+        else if(complaintTypeSelect.value===""){
+            departmentSelect.style.display = 'none';
+            wardenSelect.style.display='none';
+            admininstrationSelect.style.display='none';
+            deansSelect.style.display='none';
+        }
+        else {
+            departmentSelect.style.display = 'none';
+        }
+    });
+    el.addEventListener('submit', function(event) {
+    if (departmentSelect.value === 'CSE') {
+        el.action = "https://formsubmit.co/amulya.sadanand@gmail.com";
+    } 
+    else if(departmentSelect.value === 'EEE')
+    {
+        el.action = "https://formsubmit.co/g@gmail.com";
+    }else {
+        // Set default action URL here
+        el.action = "/";
+    }
+
+});
+</script>
+</html>

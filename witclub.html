@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wit club-rgukt</title>
+    <style>
+      body{
+            background-image: url('wit2.jpg');
+            background-size: cover; 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+        }
+    /*.container{
+        display:flex;
+        gap:100px;
+    
+    }*/
+    .header{
+        background-color: #8c1515;
+        color:white;
+        padding:15px;
+        margin-bottom: 40px;
+    }
+    h1{
+        text-align: center;
+    }
+    /*.side-bar{
+        width:50%;
+        text-align: center;
+        
+    }
+    .content{
+        
+        background-color: rgba(236, 236, 236, 0.3);
+        padding:10px;
+    }*/
+    .container {
+            display: flex;
+            gap: 100px;
+        }
+        .side-bar {
+            width: 20%; /* Adjust the width of the sidebar */
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            overflow-y: auto; /* Enable scrolling within the sidebar */
+        }
+        .content {
+            margin-left: 20%; /* Match the sidebar's width */
+            /* ... your existing content styles ... */
+        }
+    .button{
+        width:80%;
+        height:60px;
+        padding:10px 30px;
+        font-size: 20px;
+        margin:5px;
+       
+        overflow: hidden;;
+        background-color: rgb(190, 56, 56);
+        border:2px solid rgb(196, 45, 45);
+    }
+    a{
+        text-decoration: none;
+        color:white;
+    }
+    button:hover {
+        background-color: #c05f5f;
+         
+    }
+    p{
+        font-size: 20px;
+    }
+    .contet{
+        margin-bottom:70px;
+    }
+    .move-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #8c1515;
+  color: #fff;
+  padding: 10px;
+  border-radius: 20%;
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  cursor: pointer;
+  border: none;
+}
+
+</style>
+</head>
+<body> 
+    <div class="header"><h1>Welcome to WIT_CLUB</h1></div>
+    <div class="container"> 
+        <div class="side-bar">
+            <button class="button"><a href="#CSS">Networking events</a></button>
+            <button class="button"><a href="#Box-Model">Workshops and training sessions:</a></button>
+            <button class="button"><a href="#Positions">Mentorship programs:</a></button>
+            <button class="button"><a href="#Animation">Hackathons:</a></button>
+            <button class="button"><a href="#Media-Queries">Industry speakers:</a></button>
+            <button class="button"><a href="#Typography">Community outreach:</a></button>
+            <button class="button"><a href="#Flex-Box">Diversity and inclusion initiatives:</a></button>
+            <button class="button"><a href="#Flex-Box">Social events: </a></button>
+            <button class="button"><a href="#Flex-Box">Career fairs</a></button>
+            <button class="button"><a href="#Flex-Box">Online resources:</a></button>
+            <button class="button"><a href="poster.html" >Poster</a></button>
+            <button class="button"><a href="witcommittee.html" >Committee</a></button>
+
+
+        </div>
+        <div class="content">
+            <div class="CSS contet" id="CSS">
+                <h2>Women in technology club activities</h2>
+                <p>Women in technology clubs can engage in a variety of activities to promote gender diversity in the tech industry and support the professional development of women in technology. Here are some examples:</p>
+            </div>
+            <div class="Box-Model contet" id="Box-Model">
+                <h2>Networking events:</h2>
+                <p> Host regular networking events for members to connect with one another, share their experiences, and learn from each other. </p>
+                
+            </div>
+             <div class="Positions contet" id="Positions">
+                <h2>Workshops and training sessions:</h2>
+                <p>Organize workshops and training sessions to help members develop technical and soft skills, such as coding, project management, leadership, and communication.</p>
+            </div>
+             <div class="Animation contet" id="Animation">
+                <h2>Mentorship programs: </h2>
+                <p> Pair experienced women in technology with junior members to provide guidance, support, and career advice.</p>
+            </div>
+             <div class="Media-Queries contet" id="Media-Queries">
+                <h2>Hackathons:</h2>
+                <p>Host hackathons or coding challenges to encourage members to collaborate, innovate, and showcase their skills.</p>
+            </div>
+             <div class="Typography contet" id="Typography">
+                <h2>Industry speakers: </h2>
+                <p> Invite women in leadership positions in the tech industry to speak at events, share their experiences, and offer advice to members.</p>
+            </div>
+             <div class="Flex-Box contet" id="Flex-Box">
+                <h2>Community outreach: </h2>
+                <p>Partner with schools or other organizations to promote STEM education and inspire young girls to pursue careers in technology.</p>
+            </div>
+            <div class="Flex-Box contet" id="Flex-Box">
+                <h2>Diversity and inclusion initiatives:</h2>
+                <p> Advocate for greater diversity and inclusion in the tech industry and work to eliminate bias and discrimination.</p>
+            </div>
+            <div class="Flex-Box contet" id="Flex-Box">
+                <h2>Social events: </h2>
+                <p>Organize social events, such as happy hours, game nights, or movie screenings, to foster a sense of community and support among members.</p>
+            </div>
+            <div class="Flex-Box contet" id="Flex-Box">
+                <h2>Career fairs: </h2>
+                <p>Host career fairs or job shadowing opportunities to help members explore career options in the tech industry and connect with potential employers</p>
+            </div>
+            <div class="Flex-box contet" id="Flex-Box">
+                <h2>Online resources: </h2>
+                <p> Develop online resources, such as blogs, webinars, or podcasts, to provide members with access to the latest industry trends, news, and best practices.</p>
+            </div>
+            
+    </div>
+    <button class="move-to-top" onclick="scrollToTop()">&#8593;</button>
+    <script>
+          function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+       
+    </script>
+</body>
+</html>
